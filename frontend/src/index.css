@@ -1,33 +1,135 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors */
+  --text-color: white;
+  --text-color-secondary: rgb(175, 175, 175);
+  --text-color-black: #101314;
+  --primary-color: #ef8019;
+  --primary-color-hover: #a3e78a;
+  --primary-color-opacity-sm: #a3e78a86;
+  --secondary-color: #9b9c9e;
+  --icon-color: #686b6e;
+  --sidebar-color: #1e1e1e;
+  --sidebar-color-background: #1a1d21;
+  --background-color: #000;
+  --background-color-light: #3c4347;
+  --input-bg: #222629;
+  --background-color-lighter: #495055b9;
+  --background-color-dark: #272d31;
+  --background-color-darker: #0a0c0e;
+  --link-color: #646cff;
+  --purple-color: #7c26cc;
+  --link-color-hover: #b6f09c;
+  --border-color: #626a70;
+  --border-color-dark: #353d44;
+  --border-color-primary: #6fa85b7a;
+  --error-color: #ff4d4f;
+  --warning-color: #faad14;
+  --menu-background-color: #0d0f10;
+  --menu-text-color: #9b9c9e;
+  --menu-text-color-secondary: #bbbbbb;
+  --border-color-secondary: #363a3d;
+
+  /* Heights */
+  --main-header-height: 3rem;
+
+  /* Font sizes */
+  --base-font-size: 14px;
+  --base-font-size-sm: 12px;
+  --base-font-size-xs: 10px;
+  --base-font-size-md: 15px;
+  --base-font-size-lg: 16px;
+  --base-font-size-xl: 18px;
+  --hero-font-size: 3.2rem;
+  --hero-font-size-sm: 3rem;
+  --landing-hero-font-size: 4rem;
+  --title-font-size: 2.5rem;
+  --title-font-size-sm: 1.9rem;
+  --title-font-size-xs: 1rem;
+  --card-title-font-size: 1rem;
+
+  /* Radius */
+  --border-radius: 5px;
+  --border-radius-sm: 3px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 10px;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  font-weight: 400;
+  color: var(--text-color);
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-color-hover);
 }
 
+html,
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  color: var(--text-color) !important;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  background-color: var(--background-color) !important;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -35,34 +137,145 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+p {
+  font-size: var(--base-font-size);
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  letter-spacing: normal !important;
+  margin: 0 !important;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.heroTitle {
+  font-size: var(--hero-font-size);
+  line-height: 1.1;
+  font-weight: 500;
+  max-width: 500px;
+  letter-spacing: 0.3px;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  letter-spacing: 0.2px;
+}
+
+.landingTitle {
+  font-size: var(--landing-hero-font-size);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.featuresTitle {
+  font-size: var(--title-font-size);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.pricesTitle {
+  font-size: var(--hero-font-size-sm);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.landingSubTitle {
+  font-size: calc(var(--title-font-size-sm) - 0.5rem);
+  font-weight: 400;
+  max-width: 650px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.landingDesc {
+  font-size: var(--base-font-size-xl);
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.featuresDesc {
+  font-size: var(--base-font-size-xl);
+  font-weight: 400;
+  max-width: 800px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.mantine-AppShell-main {
+  min-height: calc(100vh - calc(var(--main-header-height) + 18rem));
+  height: calc(100% - calc(var(--main-header-height) + 18rem));
+}
+
+.subTitle {
+  font-size: var(--base-font-size-lg);
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-color-light);
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: var(--hero-font-size-sm);
   }
-  a:hover {
-    color: #747bff;
+  .landingTitle {
+    font-size: calc(var(--title-font-size) - 0.3rem);
   }
-  button {
-    background-color: #f9f9f9;
+  .landingSubTitle {
+    font-size: var(--base-font-size);
   }
+  .landingDesc {
+    font-size: var(--base-font-size-sm);
+  }
+  .featuresTitle {
+    font-size: calc(var(--title-font-size-sm) - 0.3rem);
+  }
+  .featuresDesc {
+    d47113 .pricesTitle {
+      font-size: calc(var(--title-font-size-sm) - 0.5rem);
+    }
+  }
+}
+
+.scrollTop {
+  background-color: var(--primary-color);
+  color: var(--text-color-black);
+}
+
+.scrollTop:hover {
+  background-color: var(--primary-color-hover);
+}
+
+#loading-animation {
+  /* Your CSS properties for positioning and styling the loading animation container */
+  display: block; /* Change to 'none' after React app is loaded */
+}
+
+ul {
+  margin: 0;
+}
+
+.mantine-SegmentedControl-label {
+  color: #fff;
 }

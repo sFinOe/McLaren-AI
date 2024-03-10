@@ -1,4 +1,4 @@
-import { AppShell } from "@mantine/core";
+import { AppShell, Container } from "@mantine/core";
 import proptypes from "prop-types";
 
 function Layout({ navbar, header, footer, children, nopadding, aside }) {
@@ -11,7 +11,7 @@ function Layout({ navbar, header, footer, children, nopadding, aside }) {
       aside={aside ? aside : <></>}
       padding={nopadding ? 0 : ""}
     >
-      {children}
+      <Container size="lg">{children}</Container>
     </AppShell>
   );
 }

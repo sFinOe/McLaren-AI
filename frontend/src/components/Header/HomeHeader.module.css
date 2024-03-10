@@ -1,0 +1,33 @@
+.nav_bg {
+  background-color: rgba(19, 22, 25, 0.85);
+  backdrop-filter: blur(10px);
+}
+.UnstyledButton {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.UnstyledButton svg {
+  transition: transform 0.3s ease;
+}
+
+.UnstyledButton:hover {
+  color: var(--primary-color);
+}
+
+.UnstyledButton:hover svg {
+  transform: rotate(180deg);
+}
+
+.account:hover {
+  color: #b6f09c;
+}
+
+@media (max-width: 768px) {
+  .UnstyledButton {
+    justify-content: flex-start;
+  }
+}

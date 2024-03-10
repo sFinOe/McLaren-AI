@@ -1,13 +1,9 @@
 {
   "colorScheme": "dark",
   "colors": {
-    "grenade": ["#bff1a9", "#bef1a8", "#cdf4bb", "#bef1a7", "#bdf1a6", "#bcf1a5", "#bcf1a4", "#baf0a2", "#b6f09c", "#a3e78a"],
-    "dark": ["#fff", "#111", "#222", "#9B9C9E", "#363A3D", "#555", "#1A1D21", "#131619", "rgba(0, 0, 0, 0.6)", "rgba(0, 0, 0, 0.8)"],
-    "lightDark": ["#fff", "#fff", "#fff", "#fff", "#fff", "#b6f09c", "#fff", "#fff", "#212529", "#343a40"],
-    "light": ["#fff", "#111", "#222", "#9B9C9E", "#363A3D", "#555", "#1A1D21", "#131619", "#1A1D21", "#23262b"],
-    "red": ["#FFF5F5", "#FFE3E3", "##FFC9C9", "#ff6264", "#ff5f61", "#ff5b5d", "#ff585a", "#ff5456", "#ff5152", "#ff4d4f"],
-    "purple": ["#ebddf9", "#e5d2f7", "#d8bbf2", "#cba5ee", "#be8eea", "#b177e6", "#a461e2", "#964add", "#8934d9", "#7c26cc"]
+    "darky": ["#797979", "#6e6e6e", "#636363", "#585858", "#4d4d4d", "#555", "#414141", "#363636", "#2b2b2b", "#202020"]
   },
-  "primaryColor": "grenade",
+  "primaryColor": "darky",
+
   "fontFamily": "Poppins, sans-serif"
 }
