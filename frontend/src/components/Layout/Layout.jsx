@@ -11,7 +11,7 @@ function Layout({ navbar, header, footer, children, nopadding, aside }) {
       aside={aside ? aside : <></>}
       padding={nopadding ? 0 : ""}
     >
-      <Container size="lg">{children}</Container>
+      <Container size="xs">{children}</Container>
     </AppShell>
   );
 }

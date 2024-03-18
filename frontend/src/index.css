@@ -63,10 +63,10 @@
   --text-color: white;
   --text-color-secondary: rgb(175, 175, 175);
   --text-color-black: #101314;
-  --primary-color: #ef8019;
-  --primary-color-hover: #a3e78a;
-  --primary-color-opacity-sm: #a3e78a86;
-  --secondary-color: #9b9c9e;
+  --primary-color: #f18129;
+  --primary-color-hover: #f3a052;
+  --primary-color-opacity-sm: #ef8019b3;
+  --secondary-color: #202020;
   --icon-color: #686b6e;
   --sidebar-color: #1e1e1e;
   --sidebar-color-background: #1a1d21;
@@ -78,10 +78,10 @@
   --background-color-darker: #0a0c0e;
   --link-color: #646cff;
   --purple-color: #7c26cc;
-  --link-color-hover: #b6f09c;
+  --link-color-hover: #f29947;
   --border-color: #626a70;
   --border-color-dark: #353d44;
-  --border-color-primary: #6fa85b7a;
+  --border-color-primary: #ef8019;
   --error-color: #ff4d4f;
   --warning-color: #faad14;
   --menu-background-color: #0d0f10;

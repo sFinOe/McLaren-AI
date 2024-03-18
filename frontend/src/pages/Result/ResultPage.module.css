@@ -1,0 +1,30 @@
+.btn_css {
+  border: 3px solid var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.img_border {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 0;
+  width: 100%;
+}
+
+.input_css {
+  border: 3px solid var(--primary-color);
+  border-radius: 0;
+}
+
+.icon_bn {
+  border: 3px solid var(--primary-color);
+  border-radius: 0;
+  background-color: var(--secondary-color);
+}
+
+.icon_bn_2 {
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  background-color: #000;
+}

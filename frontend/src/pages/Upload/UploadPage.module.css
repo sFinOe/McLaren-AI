@@ -1,0 +1,5 @@
+.icon_bn {
+  border: 3px solid var(--primary-color);
+  border-radius: 0;
+  background-color: var(--secondary-color);
+}
